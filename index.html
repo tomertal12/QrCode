@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,14 +10,24 @@
       font-family: Arial, sans-serif;
     }
     audio {
-      transform: scale(2); /* Scale the player to make it visually larger */
+      transform: scale(2);
       transform-origin: top center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <h1>haha</h1>
-  <audio>
+
+  <button onclick="document.getElementById('player').play()">Play Sound</button>
+
+  <audio id="player">
     <source src="moan-By-Tuna.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
